@@ -1,5 +1,9 @@
 # 🏦 Smart RAG Document Analyzer
 
+<p align="center">
+  <img src="assets/img.png" alt="NeuroSchedule AI Banner" width="600" height="500">
+</p>
+
 A privacy-first, fully local Retrieval-Augmented Generation (RAG) system for extracting accurate answers from PDF documents — built with sensitive documents (bank loan statements, financial agreements, contracts) in mind.
 
 No document content is ever sent to an external API. Extraction, retrieval, and answer generation all run on your own machine.
