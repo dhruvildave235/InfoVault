@@ -28,23 +28,6 @@ No document content is ever sent to an external API. Extraction, retrieval, and 
 | Frontend | HTML / CSS / Vanilla JavaScript |
 | Templating | Jinja2 |
 
----
-
-## 📁 Project Structure
-
-```
-RAG/
-├── main.py              # FastAPI app: routes, orchestration, error handling
-├── utils.py              # PDF text extraction, cleaning, chunking
-├── rag.py                 # Dense (semantic) retrieval via FAISS
-├── hybrid.py              # BM25 keyword retrieval + RRF fusion
-├── llm.py                  # Answer extraction engine (label-value, proximity, sentence ranking)
-├── requirements.txt        # Python dependencies
-├── templates/
-│   └── index.html          # Frontend UI
-└── data/
-    └── sample.pdf           # Uploaded document (created at runtime)
-```
 
 ---
 
@@ -77,8 +60,6 @@ uvicorn main:app --reload
 ```
 http://127.0.0.1:8000
 ```
-
-> **Note:** The first run downloads the `all-MiniLM-L6-v2` embedding model (~80MB) from Hugging Face. This is a one-time model download only — no document data is involved. After that, the app runs fully offline.
 
 ---
 
@@ -114,14 +95,6 @@ http://127.0.0.1:8000
 
 ---
 
-## 🗺️ Possible Future Improvements
-
-- OCR support for scanned documents
-- Multi-document / multi-session support
-- Optional integration with a real LLM for fluent multi-fact synthesis over the same retrieved context
-- Persistent vector store instead of in-memory FAISS index
-
----
 
 ## 👤 Author
 
