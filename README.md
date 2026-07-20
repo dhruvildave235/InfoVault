@@ -39,7 +39,7 @@ No document content is ever sent to an external API. Extraction, retrieval, and 
 
 ### 1. Clone / download the project
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/dhruvildave235/InfoVault)
 cd RAG
 ```
 
